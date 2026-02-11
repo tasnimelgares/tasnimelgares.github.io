@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Tasnim El Gares</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">Tasnim El Gares</a>
+      <nav class="links">
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h1>Tasnim El Gares</h1>
+          <p class="subtitle">Étudiante ingénieure en informatique — Polytech Nice-Sophia</p>
+          <p class="intro">
+            Je construis des projets avec une attention particulière à la qualité logicielle,
+            aux tests et à l’architecture. Ici, vous trouverez mes compétences et une sélection de projets.
+          </p>
+          <div class="cta">
+            <a class="btn" href="#projects">Voir mes projets</a>
+            <a class="btn ghost" href="https://github.com/TONPSEUDO" target="_blank" rel="noopener">Mon GitHub</a>
+          </div>
+        </div>
+
+        <div class="card profile">
+          <div class="avatar">🙂</div>
+          <div class="profile-text">
+            <p><strong>Localisation :</strong> France</p>
+            <p><strong>Langages :</strong> Java, Python, C, SQL</p>
+            <p><strong>Objectif :</strong> Alternance en dev logiciel</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>À propos</h2>
+        <p>
+         ici 4–6 lignes : parcours etc.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Compétences</h2>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Langages</h3>
+            <ul>
+              <li>Java (POO, tests, Maven)</li>
+              <li>Python (algorithmes, scripts)</li>
+              <li>C</li>
+              <li>SQL (PostgreSQL)</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Outils</h3>
+            <ul>
+              <li>Git / GitHub (GitHub Flow, PR)</li>
+              <li>Docker</li>
+              <li>JUnit / Mockito</li>
+              <li>SonarQube</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Concepts</h3>
+            <ul>
+              <li>Architecture & responsabilités</li>
+              <li>Tests unitaires et intégration</li>
+              <li>Refactoring & clean code</li>
+              <li>Analyse de complexité</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projets</h2>
+        <p class="muted">Une sélection de projets. Pour tout voir : <a href="https://github.com/tasnimelgares" target="_blank" rel="noopener">GitHub</a>.</p>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Takenoko</h3>
+            <p>Jeu complet en Java avec stratégies de robots, actions objet, logs, et tests (unitaires + intégration).</p>
+            <div class="tags">
+              <span>Java</span><span>JUnit</span><span>Architecture</span>
+            </div>
+            <a class="btn small" href="" target="_blank" rel="noopener">Voir sur GitHub</a>
+          </div>
+
+          <div class="card">
+            <h3>PARM — Processeur type Cortex-M0 (Logisim)</h3>
+            <p>ALU, banque de registres, contrôleur et intégration CPU avec tests de programmes assembleur.</p>
+            <div class="tags">
+              <span>Logisim</span><span>Architecture</span><span>CPU</span>
+            </div>
+            <a class="btn small" href="" target="_blank" rel="noopener">Voir sur GitHub</a>
+          </div>
+
+          <div class="card">
+            <h3>Réseau de bibliothèques — PostgreSQL</h3>
+            <p>Schéma relationnel, triggers, requêtes avancées (CTE récursives), données de démo.</p>
+            <div class="tags">
+              <span>PostgreSQL</span><span>SQL</span><span>Triggers</span>
+            </div>
+            <a class="btn small" href="" target="_blank" rel="noopener">Voir sur GitHub</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Vous pouvez me contacter ici :</p>
+        <ul>
+          <li>Email : tasnimelgares@outlook.fr</li>
+          <li>LinkedIn : linkedin.com/in/tasnim-el-gares-9720942b1</li>
+          <li>GitHub : https://github.com/tasnimelgares</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Tasnim El Gares</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
