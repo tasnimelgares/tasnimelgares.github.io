@@ -1,16 +1,13 @@
-# Portfolio – Tasnim El Gares
+## Portfolio – Tasnim El Gares
 
-Bienvenue sur mon portfolio personnel.
+Bienvenue sur mon portfolio personnel🤗.
 
-🌐 Site en ligne :  
-https://tasnimelgares.github.io/
-
-Étudiante ingénieure en informatique à Polytech Nice-Sophia.  
+🌐   [Voir mon portfolio](https://tasnimelgares.github.io/)
 
 ---
 
-## 🔗 Me contacter
+### 🔗 Me contacter
 
-- GitHub : https://github.com/tasnimelgares  
-- LinkedIn : https://www.linkedin.com/in/tasnim-el-gares-9720942b1  
+- GitHub : [tasnimelgares](https://github.com/tasnimelgares)
+- LinkedIn : [Voir mon profil Linkedin ](https://www.linkedin.com/in/tasnim-el-gares-9720942b1)
 - Email : tasnimelgares@outlook.fr
