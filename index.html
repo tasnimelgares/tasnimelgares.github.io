@@ -4,136 +4,217 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tasnim El Gares</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="#top">Tasnim El Gares</a>
-      <nav class="links">
-        <a href="#about">À propos</a>
-        <a href="#skills">Compétences</a>
-        <a href="#projects">Projets</a>
-        <a href="#contact">Contact</a>
-      </nav>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#top">Tasnim El Gares</a>
+    <nav class="links">
+      <a href="#about">À propos</a>
+      <a href="#skills">Compétences</a>
+      <a href="#projects">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <h1>Tasnim El Gares</h1>
+        <p class="subtitle">Élève-ingénieure en informatique | Polytech Nice-Sophia</p>
+        <p class="intro">
+          Bienvenue sur mon portfolio. Vous y trouverez une présentation de mon parcours, de mes compétences ainsi qu’une sélection des projets que j’ai réalisés au cours de ma formation.
+        </p>
+
+      </div>
+
+      <div class="card">
+        <p><strong>Localisation :</strong> Juan-les-pins, France</p>
+        <p><strong>Langages :</strong> Java, Python, C, SQL, Angular, Express.js</p>
+        <p><strong>Objectif :</strong> Stage / Alternance Full-Stack</p>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main id="top">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h1>Tasnim El Gares</h1>
-          <p class="subtitle">Élève-ingénieure en informatique - Polytech Nice-Sophia</p>
-          <p class="intro">
-            Je développe des projets avec une attention particulière à la qualité logicielle, aux tests et à la conception modulaire.
-          </p>
-          <div class="cta">
-            <a class="btn" href="#projects">Voir mes projets</a>
-            <a class="btn ghost" href="https://github.com/tasnimelgares" target="_blank">GitHub</a>
-          </div>
-        </div>
-
-        <div class="card profile">
-          <p><strong>Localisation :</strong> Juan-les-pins, France</p>
-          <p><strong>Langages :</strong> Java, Python, C, SQL, Angular, Express.js</p>
-          <p><strong>Objectif :</strong> Stage / Alternance Full-Stack</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="container">
-        <h2>À propos</h2>
-        <p>Élève ingénieure en 3e année à Polytech Nice-Sophia, spécialisée en informatique. Je porte un intérêt particulier à la qualité logicielle, à la structuration des projets et au développement d'architectures robustes.</p>
-        <p>À travers mes projets académiques réalisés en équipe et individuellement, j’ai développé des compétences en programmation orientée objet, en architecture logicielle, en modélisation de bases de données et en développement web.</p>
-      </div>
-    </section>
-
-    <section id="skills" class="section alt">
-      <div class="container">
-        <h2>Compétences</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>Langages</h3>
-            <p>Java (POO, tests, Maven), Python, C, SQL (PostgreSQL), JavaScript, Angular, Express.js</p>
-          </div>
-          <div class="card">
-            <h3>Outils</h3>
-            <p>Git / GitHub (Flow, PR), Docker, JUnit / Mockito, Playwright (E2E), SonarQube</p>
-          </div>
-          <div class="card">
-            <h3>Concepts</h3>
-            <p>Clean Code, POO, Architecture logicielle, Tests unitaires/intégration, Complexité</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="container">
-        <h2>Projets</h2>
-        <div class="grid">
-          <div class="card project">
-            <h3>MémoCuisto</h3>
-            <p><strong>App de stimulation cognitive</strong> (Alzheimer). Développée en Full-Stack (Angular/Express.js), conteneurisée avec Docker et testée avec Playwright.</p>
-            <a class="btn small" href="https://github.com/tasnimelgares/memocuisto-cognitive-game" target="_blank">GitHub</a>
-          </div>
-          <div class="card project">
-            <h3>Takenoko</h3>
-            <p><strong>Moteur de jeu Java</strong>. Stratégies de robots, actions polymorphes et couverture de tests automatisés (unitaires + intégration).</p>
-            <a class="btn small" href="https://github.com/tasnimelgares/takenoko-engine" target="_blank">GitHub</a>
-          </div>
-          <div class="card project">
-            <h3>SafeRoute - Signalement d'obstacles</h3>
-            <p><strong>App Android (Java/XML)</strong>. Projet pédagogique basé sur l'application de Design Patterns (MVC, Factory, Observer, Adapter) pour une architecture modulaire.</p>
-            <a class="btn small" href="https://github.com/tasnimelgares/safe-route" target="_blank">GitHub</a>
-          </div>
-          <div class="card project">
-            <h3>PARM</h3>
-            <p><strong>Processeur 32 bits</strong>. Conception pédagogique (Logisim) : ALU, contrôleur, registres, flags et exécution assembleur.</p>
-            <a class="btn small" href="https://github.com/tasnimelgares/parm-processor" target="_blank">GitHub</a>
-          </div>
-          <div class="card project">
-            <h3>Bibliothèques</h3>
-            <p><strong>PostgreSQL</strong>. Modélisation de schéma relationnel, normalisation, triggers et requêtes SQL avancées.</p>
-            <a class="btn small" href="https://github.com/tasnimelgares/library-network-postgresql" target="_blank">GitHub</a>
-          </div>
-          <div class="card project">
-            <h3>Dojo Poker</h3>
-            <p><strong>Java</strong>. Implémentation des règles complètes du poker avec comparateur de mains et hiérarchie de rangs.</p>
-            <a class="btn small" href="https://github.com/tasnimelgares/dojo-poker-project" target="_blank">GitHub</a>
-          </div>
-          <div class="card project">
-            <h3>Hangman App</h3>
-            <p><strong>Frontend</strong>. Jeu du pendu connecté à une API avec gestion de l'authentification JWT côté client.</p>
-            <a class="btn small" href="https://github.com/tasnimelgares/hangman-web-app" target="_blank">GitHub</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section alt">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>Email : tasnimelgares@outlook.fr</p>
-        <p>LinkedIn : <a href="https://www.linkedin.com/in/tasnim-el-gares-9720942b1" target="_blank">Voir mon profil</a></p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
+  <section id="about" class="section">
     <div class="container">
-      <p>© <span id="year"></span> Tasnim El Gares</p>
+       <h2>À propos</h2>
+        <p>
+        Élève-ingénieure en informatique à Polytech Nice-Sophia, j’ai choisi cette spécialité pour la diversité des problématiques qu’elle permet d’aborder et pour l’impact concret que peuvent avoir les solutions développées.
+        </p>
+        <br>
+        <p>
+        Au-delà de l’aspect technique, je m’intéresse particulièrement à la compréhension des besoins et à leur traduction en solutions logicielles pertinentes. J’apprécie analyser une problématique dans son ensemble, identifier les attentes des utilisateurs et concevoir des applications fiables, maintenables et cohérentes avec leurs objectifs.
+        </p>
+        <br>
+        <p>
+        Mon parcours m’a permis de développer rigueur, organisation et méthode dans la conduite de projets. Les travaux réalisés en équipe m’ont également appris l’importance de la communication, de la collaboration et du partage des connaissances pour mener un projet à bien.
+        </p>
+        <br>
+        <p>
+        Curieuse de nature, j’aime explorer de nouveaux domaines, découvrir de nouvelles technologies et approfondir continuellement mes compétences. J’accorde une attention particulière à la qualité du travail réalisé, tout en cherchant à apporter des idées nouvelles lorsque cela permet d'améliorer l'expérience utilisateur ou la solution proposée.
+        </p>
     </div>
-  </footer>
+  </section>
 
-  <script src="script.js"></script>
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2>Compétences</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Langages</h3>
+          <p>Java (POO, tests, Maven), Python, C, SQL (PostgreSQL), JavaScript, Angular, Express.js</p>
+        </div>
+        <div class="card">
+          <h3>Outils</h3> 
+          <p>Git / GitHub (Flow, PR), Docker, JUnit / Mockito, Playwright (E2E), SonarQube</p>
+        </div>
+        <div class="card">
+          <h3>Concepts</h3>
+          <p>Qualité logicielle, Analyse des besoins, Conception modulaire, Design Patterns, Tests automatisés, Clean Code, Architecture logicielle</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+
+      <h2>Projets</h2>
+      <p class="muted" style="margin-bottom: 20px;"><em>Tous les projets triés du plus récent au plus ancien. Cliquez sur une carte pour voir le code.</em></p>
+
+      <div class="carousel-container">
+
+        <button class="arrow left" id="prev">‹</button>
+
+        <div class="carousel" id="carousel">
+
+          <div class="project clickable-card" data-url="https://github.com/tasnimelgares/memocuisto-cognitive-game">
+            <div class="project-title">
+              MémoCuisto
+            </div>
+            <img src="assets/homepage-memocuisto.png" alt="Aperçu MémoCuisto">
+            <p>App de stimulation cognitive (Angular/Express.js)</p>
+          </div>
+
+          <div class="project clickable-card" data-url="https://github.com/tasnimelgares/safe-route">
+            <div class="project-title">
+              SafeRoute
+            </div>
+            <img src="assets/accueil.png" alt="Aperçu SafeRoute">
+            <p>App Android (Design Patterns)</p>
+          </div>
+
+          <div class="project clickable-card" data-url="https://github.com/tasnimelgares/takenoko-engine">
+            <div class="project-title">Takenoko</div>
+             <img src="assets/takenoko.png" alt="Aperçu Takenoko">
+            <p>Moteur de jeu Java</p>
+          </div>
+
+          <div class="project clickable-card" data-url="https://github.com/tasnimelgares/parm-processor">
+            <div class="project-title">PARM</div>
+             <img src="assets/parm.png" alt="Aperçu PARM">
+            <p>Processeur 32 bits</p>
+          </div>
+          
+          <div class="project clickable-card" data-url="https://github.com/tasnimelgares/library-network-postgresql">
+            <div class="project-title">Bibliothèques</div>
+             <img src="assets/sql.png" alt="Aperçu PostgreSQL">
+            <p>PostgreSQL (Schéma relationnel)</p>
+          </div>
+
+          <div class="project clickable-card" data-url="https://github.com/tasnimelgares/dojo-poker-project">
+            <div class="project-title">Dojo Poker</div>
+             <img src="assets/dojo.png" alt="Aperçu Dojo Poker">
+            <p>Java poker engine</p>
+          </div>
+          
+          <div class="project clickable-card" data-url="https://github.com/tasnimelgares/hangman-web-app">
+            <div class="project-title">Hangman app</div>
+             <img src="assets/hangman.png" alt="Aperçu Hangman">
+            <p>Frontend (Jeu du pendu)</p>
+          </div>
+
+        </div>
+
+        <button class="arrow right" id="next">›</button>
+      </div>
+
+      <button id="toggle">Afficher tout</button>
+
+      <div class="grid projects-grid" id="grid">
+
+        <div class="card">
+          <h3>MémoCuisto</h3>
+          <p><strong>App de stimulation cognitive</strong> (Alzheimer). Développée en Full-Stack (Angular/Express.js), conteneurisée avec Docker et testée avec Playwright.</p>
+          <a class="btn small" href="https://github.com/tasnimelgares/memocuisto-cognitive-game" target="_blank">GitHub</a>
+        </div>
+        
+        <div class="card">
+          <h3>Takenoko</h3>
+          <p><strong>Moteur de jeu Java</strong>. Stratégies de robots, actions polymorphes et couverture de tests automatisés (unitaires + intégration).</p>
+          <a class="btn small" href="https://github.com/tasnimelgares/takenoko-engine" target="_blank">GitHub</a>
+        </div>
+        
+        <div class="card">
+          <h3>SafeRoute</h3>
+          <p><strong>App Android (Java/XML) de signalement d'obstacles</strong>. Projet pédagogique basé sur l'application de Design Patterns (MVC, Factory, Observer, Adapter) pour une architecture modulaire.</p>
+          <a class="btn small" href="https://github.com/tasnimelgares/safe-route" target="_blank">GitHub</a>
+        </div>
+          
+        <div class="card">
+          <h3>PARM</h3>
+          <p><strong>Processeur 32 bits</strong>. Conception pédagogique (Logisim) : ALU, contrôleur, registres, flags et exécution assembleur.</p>
+          <a class="btn small" href="https://github.com/tasnimelgares/parm-processor" target="_blank">GitHub</a>
+        </div>
+        
+        <div class="card">
+          <h3>Bibliothèques</h3>
+          <p><strong>PostgreSQL</strong>. Modélisation de schéma relationnel, normalisation, triggers et requêtes SQL avancées.</p>
+          <a class="btn small" href="https://github.com/tasnimelgares/library-network-postgresql" target="_blank">GitHub</a>
+        </div>
+
+        <div class="card">
+          <h3>Dojo Poker</h3>
+          <p><strong>Java</strong>. Implémentation des règles complètes du poker avec comparateur de mains et hiérarchie de rangs.</p>
+          <a class="btn small" href="https://github.com/tasnimelgares/dojo-poker-project" target="_blank">GitHub</a>
+        </div>
+        
+        <div class="card">
+          <h3>Hangman app</h3>
+          <p><strong>Frontend</strong>. Jeu du pendu connecté à une API avec gestion de l'authentification JWT côté client.</p>
+          <a class="btn small" href="https://github.com/tasnimelgares/hangman-web-app" target="_blank">GitHub</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email : tasnimelgares@outlook.fr</p>
+      <p>LinkedIn : <a href="https://www.linkedin.com/in/tasnim-el-gares-9720942b1" target="_blank">Voir mon profil LinkedIn</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">© <span id="year"></span> Tasnim El Gares</div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
