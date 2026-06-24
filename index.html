@@ -4,8 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tasnim El Gares</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header class="nav">
     <div class="container nav-inner">
@@ -20,33 +24,25 @@
   </header>
 
   <main id="top">
+    <!-- HERO -->
     <section class="hero">
       <div class="container hero-inner">
-        <div>
+        <div class="hero-text">
           <h1>Tasnim El Gares</h1>
-          <p class="subtitle">Étudiante ingénieure en informatique — Polytech Nice-Sophia</p>
+          <p class="subtitle">Élève-ingénieure en informatique - Polytech Nice-Sophia</p>
           <p class="intro">
-            Je développe des projets avec une attention particulière à la qualité logicielle,
-            aux tests et à la conception modulaire. Ici, vous trouverez mes compétences et une 
-            sélection de projets académiques réalisés en équipe ou individuellement.
+            Je développe des projets avec une attention particulière à la qualité logicielle, aux tests et à la conception modulaire.
           </p>
           <div class="cta">
             <a class="btn" href="#projects">Voir mes projets</a>
-            <a class="btn ghost" 
-              href="https://github.com/tasnimelgares" 
-              target="_blank" rel="noopener">
-              Mon GitHub
-            </a>
+            <a class="btn ghost" href="https://github.com/tasnimelgares" target="_blank">GitHub</a>
           </div>
         </div>
 
         <div class="card profile">
-        <!--plus tard><div class="avatar">💻</div><!-->
-          <div class="profile-text">
-            <p><strong>Localisation :</strong> France - Antibes </p>
-            <p><strong>Langages :</strong> Java, Python, C, SQL</p>
-            <p><strong>Objectif :</strong> Alternance en développement logiciel</p>
-          </div>
+          <p><strong>Localisation :</strong> Juan-les-pins, France</p>
+          <p><strong>Langages :</strong> Java, Python, C, SQL, Angular, Express.js</p>
+          <p><strong>Objectif :</strong> Stage / Alternance Full-Stack</p>
         </div>
       </div>
     </section>
@@ -54,153 +50,75 @@
     <section id="about" class="section">
       <div class="container">
         <h2>À propos</h2>
-        <p>
-          Étudiante en 3e année à Polytech Nice-Sophia, spécialisée en informatique.
-        </p>
-        <p>
-         À travers mes projets académiques réalisés en équipe et individuellement,
-        j’ai développé des compétences en programmation orientée objet,
-        en architecture logicielle, en modélisation de bases de données
-        et en développement web.
-        </p>
-        <p>
-           Je recherche une alternance en développement logiciel afin de
-          mettre en pratique mes compétences techniques et continuer à progresser
-          en conception et qualité logicielle.
-        </p>
+        <p>Élève ingénieure en 3e année à Polytech Nice-Sophia, spécialisée en informatique. Je porte un intérêt particulier à la qualité logicielle, à la structuration des projets et au développement d'architectures robustes.</p>
+        <p>À travers mes projets académiques réalisés en équipe et individuellement, j’ai développé des compétences en programmation orientée objet, en architecture logicielle, en modélisation de bases de données et en développement web.</p>
       </div>
     </section>
 
     <section id="skills" class="section alt">
       <div class="container">
         <h2>Compétences</h2>
-
         <div class="grid">
           <div class="card">
             <h3>Langages</h3>
-            <ul>
-              <li>Java (POO, tests, Maven)</li>
-              <li>Python (algorithmes, scripts)</li>
-              <li>C</li>
-              <li>SQL (PostgreSQL)</li>
-            </ul>
+            <p>Java (POO, tests, Maven), Python, C, SQL (PostgreSQL), JavaScript, Angular, Express.js</p>
           </div>
-
           <div class="card">
             <h3>Outils</h3>
-            <ul>
-              <li>Git / GitHub (GitHub Flow, PR)</li>
-              <li>Docker</li>
-              <li>JUnit / Mockito</li>
-              <li>SonarQube</li>
-            </ul>
+            <p>Git / GitHub (Flow, PR), Docker, JUnit / Mockito, Playwright (E2E), SonarQube</p>
           </div>
-
           <div class="card">
             <h3>Concepts</h3>
-            <ul>
-              <li>Architecture & responsabilités</li>
-              <li>Tests unitaires et intégration</li>
-              <li>Refactoring & clean code</li>
-              <li>Analyse de complexité</li>
-            </ul>
+            <p>Clean Code, POO, Architecture logicielle, Tests unitaires/intégration, Complexité</p>
           </div>
         </div>
       </div>
     </section>
-    <!-- Projets -->
+
     <section id="projects" class="section">
       <div class="container">
         <h2>Projets</h2>
-        <p class="muted">Une sélection de projets disponibles sur : <a href="https://github.com/tasnimelgares" target="_blank" rel="noopener">mon GitHub</a>.</p>
-
         <div class="grid">
-          <div class="card">
-            <h3>Takenoko — Moteur de jeu Java</h3>
-            <p>Projet académique en équipe (4)</p>
-            <p>Jeu complet en Java avec stratégies de robots, actions polymorphes et couverture de tests automatisés (unitaires + intégration).</p>
-            <div class="tags">
-              <span>Java</span><span>JUnit</span><span>Architecture</span>
-            </div>
-            <a class="btn small" href="https://github.com/tasnimelgares/takenoko-engine" target="_blank">Voir sur GitHub</a>
+          <div class="card project">
+            <h3>MémoCuisto</h3>
+            <p><strong>App de stimulation cognitive</strong> (Alzheimer). Développée en Full-Stack (Angular/Express.js), conteneurisée avec Docker et testée avec Playwright.</p>
+            <a class="btn small" href="https://github.com/tasnimelgares/memocuisto-cognitive-game" target="_blank">GitHub</a>
           </div>
-
-          <div class="card">
-            <h3>PARM — Processeur 32 bits</h3>
-            <p>Projet académique en équipe (4)</p>
-            <p>Conception d’un processeur pédagogique inspiré d’ARM :
-              ALU, contrôleur, registres, flags et exécution assembleur.</p>
-            <div class="tags">
-              <span>Logisim</span><span>Architecture</span><span>CPU</span>
-            </div>
-            <a class="btn small" href="https://github.com/tasnimelgares/parm-processor" target="_blank">Voir sur GitHub</a>
+          <div class="card project">
+            <h3>Takenoko</h3>
+            <p><strong>Moteur de jeu Java</strong>. Stratégies de robots, actions polymorphes et couverture de tests automatisés (unitaires + intégration).</p>
+            <a class="btn small" href="https://github.com/tasnimelgares/takenoko-engine" target="_blank">GitHub</a>
           </div>
-
-          <div class="card">
-            <h3>Réseau de bibliothèques — PostgreSQL</h3>
-            <p>Projet académique en équipe (3)</p>
-            <p> Modélisation complète d’un schéma relationnel,
-              normalisation, triggers et requêtes SQL avancées.</p>
-            <div class="tags">
-              <span>PostgreSQL</span><span>SQL</span>
-            </div>
-            <a class="btn small" href="https://github.com/tasnimelgares/library-network-postgresql" target="_blank">Voir sur GitHub</a>
+          <div class="card project">
+            <h3>PARM</h3>
+            <p><strong>Processeur 32 bits</strong>. Conception pédagogique (Logisim) : ALU, contrôleur, registres, flags et exécution assembleur.</p>
+            <a class="btn small" href="https://github.com/tasnimelgares/parm-processor" target="_blank">GitHub</a>
           </div>
-          
-           <div class="card">
-            <h3>Dojo Poker — Java</h3>
-             <p>Projet académique en équipe (3)</p>
-            <p>
-              Implémentation des règles complètes du poker
-              avec comparateur de mains et hiérarchie de rangs.
-            </p>
-            <div class="tags">
-              <span>Java</span><span>POO</span>
-            </div>
-            <a class="btn small"
-               href="https://github.com/tasnimelgares/dojo-poker-project"
-               target="_blank">Voir sur GitHub</a>
+          <div class="card project">
+            <h3>Bibliothèques</h3>
+            <p><strong>PostgreSQL</strong>. Modélisation de schéma relationnel, normalisation, triggers et requêtes SQL avancées.</p>
+            <a class="btn small" href="https://github.com/tasnimelgares/library-network-postgresql" target="_blank">GitHub</a>
           </div>
-          
-          <div class="card">
-            <h3>Hangman Web App</h3>
-            <p>Projet académique individuel</p>
-            <p>
-             Développement du frontend d’un jeu du pendu connecté à une API fournie dans le cadre du module, 
-              avec gestion de l’authentification JWT côté client.
-            </p>
-            <div class="tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
-            <a class="btn small"
-               href="https://github.com/tasnimelgares/hangman-web-app"
-               target="_blank">Voir sur GitHub</a>
+          <div class="card project">
+            <h3>Dojo Poker</h3>
+            <p><strong>Java</strong>. Implémentation des règles complètes du poker avec comparateur de mains et hiérarchie de rangs.</p>
+            <a class="btn small" href="https://github.com/tasnimelgares/dojo-poker-project" target="_blank">GitHub</a>
           </div>
-
+          <div class="card project">
+            <h3>Hangman App</h3>
+            <p><strong>Frontend</strong>. Jeu du pendu connecté à une API avec gestion de l'authentification JWT côté client.</p>
+            <a class="btn small" href="https://github.com/tasnimelgares/hangman-web-app" target="_blank">GitHub</a>
+          </div>
         </div>
       </div>
     </section>
-      <!-- CONTACT -->
+
+    <!-- CONTACT -->
     <section id="contact" class="section alt">
       <div class="container">
         <h2>Contact</h2>
-        <ul>
-          <li>Email : tasnimelgares@outlook.fr</li>
-          <li>
-            LinkedIn :
-            <a href="https://www.linkedin.com/in/tasnim-el-gares-9720942b1"
-               target="_blank">
-               Voir mon profil
-            </a>
-          </li>
-         <li>
-            GitHub :
-            <a href="https://github.com/tasnimelgares"
-               target="_blank">
-               github.com/tasnimelgares
-            </a>
-          </li>
-        </ul>
+        <p>Email : tasnimelgares@outlook.fr</p>
+        <p>LinkedIn : <a href="https://www.linkedin.com/in/tasnim-el-gares-9720942b1" target="_blank">Voir mon profil</a></p>
       </div>
     </section>
   </main>
@@ -211,8 +129,6 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
