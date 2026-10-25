@@ -1,6 +1,6 @@
 :root {
   --bg:#e8f4f4; --bg-alt:rgba(200,230,232,.6); --card:rgba(255,255,255,.8);
-  --text:#1d3037; --muted:#5a747b; --blue:#2a8594; --pink:#ce76e0; --green:#1f9a89;
+  --text:#1d3037; --muted:#5a747b; --blue:#2a8594; --pink:#c94f7c; --green:#1f9a89;
   --on-accent:#fff;
   --border:rgba(29,48,55,.1); --shadow:0 10px 30px rgba(29,48,55,.08); --shadow-hover:0 15px 40px rgba(29,48,55,.16);
   --blob1:#6fd0cf; --blob2:#9be3c9; --blob3:#8fc8ee; --nav:rgba(255,255,255,.7);
@@ -48,6 +48,8 @@ a{color:var(--blue);text-decoration:none}
 .logo{display:block;width:auto}
 .logo-dark{display:none}
 /* fait disparaître le fond uni de l'image : blanc en mode clair, noir en mode sombre */
+.logo-light{mix-blend-mode:multiply}
+.logo-dark{mix-blend-mode:screen}
 .brand .logo{height:46px}
 .links a{margin-left:18px;color:var(--muted)}
 .links a:hover{color:var(--blue)}
@@ -159,3 +161,8 @@ h2::after{content:"";display:block;width:60px;height:4px;margin-top:8px;border-r
 }
 :root[data-theme="dark"] .logo-light{display:none}
 :root[data-theme="dark"] .logo-dark{display:block}
+
+/* TAGS DES PROJETS : date + compétences */
+.project .tags{justify-content:center;margin:12px 0 4px}
+.card .tags{margin:10px 0 0}
+.tags .tag-date,.noimg .tag-date{background:transparent;border-color:var(--pink);color:var(--pink);font-weight:600}

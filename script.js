@@ -9,11 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // TEXTES DE L'INTERFACE (les contenus de la page sont dans i18n.js)
   const UI = {
     fr: { dark: "Mode sombre", showAll: "Afficher tout", less: "Voir moins", prev: "Projet précédent", next: "Projet suivant",
-          enlarge: n => `Agrandir la photo ${n}`, photo: n => `Photo du concours fullstack 2026 (${n}/3)`, preview: "Aperçu",
+          enlarge: n => `Agrandir la photo ${n}`, preview: "Aperçu",
           lightbox: "Photo agrandie", lang: "EN", langLabel: "Switch to English",
           desc: "Portfolio de Tasnim El Gares, élève-ingénieure en informatique à Polytech Nice Sophia." },
     en: { dark: "Dark mode", showAll: "Show all", less: "Show less", prev: "Previous project", next: "Next project",
-          enlarge: n => `Enlarge photo ${n}`, photo: n => `Fullstack competition 2026 photo (${n}/3)`, preview: "Preview of",
+          enlarge: n => `Enlarge photo ${n}`, preview: "Preview of",
           lightbox: "Enlarged photo", lang: "FR", langLabel: "Passer en français",
           desc: "Portfolio of Tasnim El Gares, computer science engineering student at Polytech Nice Sophia." }
   };
@@ -141,9 +141,13 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("prev").setAttribute("aria-label", u.prev);
     document.getElementById("next").setAttribute("aria-label", u.next);
     lb.setAttribute("aria-label", u.lightbox);
-    document.querySelectorAll(".gallery .thumb").forEach((t, i) => {
-      t.setAttribute("aria-label", u.enlarge(i % 3 + 1));
-      t.querySelector("img").alt = u.photo(i % 3 + 1);
+    document.querySelectorAll(".gallery").forEach(g => {
+      const thumbs = [...g.querySelectorAll(".thumb")];
+      const base = lang === "en" ? g.dataset.altEn : g.dataset.alt;
+      thumbs.forEach((t, i) => {
+        t.setAttribute("aria-label", u.enlarge(i + 1));
+        if (base) t.querySelector("img").alt = `${base} (${i + 1}/${thumbs.length})`;
+      });
     });
     document.querySelectorAll(".project img:not(.thumb img)").forEach(img => {
       if (img.dataset.n === undefined) img.dataset.n = img.alt.replace(/^Aperçu /, "");

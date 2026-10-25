@@ -38,7 +38,6 @@ const EN = {
  "Conception orientée objet": "Object-oriented design",
  "IA & données": "AI &amp; data",
  "DevOps & outils": "DevOps &amp; tools",
- "Savoir-être": "Soft skills",
  "Résolution de problèmes": "Problem-solving",
  "Adaptabilité": "Adaptability",
  "Travail d’équipe": "Teamwork",
