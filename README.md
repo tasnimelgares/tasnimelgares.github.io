@@ -1,4 +1,4 @@
-## Portfolio – Tasnim El Gares
+## Portfolio - Tasnim El Gares
 
 Bienvenue sur mon portfolio personnel🤗.
 
